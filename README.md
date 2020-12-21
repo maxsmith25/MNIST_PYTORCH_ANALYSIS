@@ -1,1 +1,5 @@
-# mnist_pytorch_analysis
+## Simple analysis of the MNIST data in pytorch
+
+This was a simple convolutional nueral network model composed of two convolusion layers and a fully connected layer. My model achieved 97.84% accuracy on the testing/validation dataset. I improved the testing accuracy by setting the number of epochs to 15. 15 epochs was where the accuracy on the training data was close to the accuracy on the training data which was 97.25%. 
+
+To further improve the model I would want to look into helping the model better deal with rotated data or just more resilliant in general. When I removed the RandomRotation data augmentor from the training Dataloader the testing accuracy jumped to over 99%. Testing accuracy isn't the best metric to evaluate models but I would want to find a way to bring it over 99%. I would also want to look at which numbers it is confusing and see how you could deal with the most common errors.
